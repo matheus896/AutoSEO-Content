@@ -3,7 +3,7 @@
 ![CrewAI Logo](https://cdn.prod.website-files.com/66cf2bfc3ed15b02da0ca770/66d07240057721394308addd_Logo%20(1).svg)  
 *Sistema automatizado para criação de posts de blog otimizados para SEO com IA*
 
-![App Screenshot](app-screenshot.png)
+![App Screenshot](https://github.com/matheus896/AutoSEO-Content/blob/main/auto-seo-content/src/auto-seo-content/tela%20streamlit.png).
 
 ## 🌟 Recursos Principais
 - **🤖 6 Agentes Especializados**  
