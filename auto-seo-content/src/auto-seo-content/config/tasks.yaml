@@ -1,0 +1,71 @@
+# tasks.yaml
+keyword_research:
+  title: "Perform SEO Keyword Research & Trend Analysis"
+  description: >
+    Using the topic {topic}, research current high-volume, 
+    low-competition keywords and related trends. Generate a list 
+    of primary, secondary, and LSI keywords, including any relevant 
+    metrics (e.g., search volume, difficulty). The current date is {current_date}.
+  expected_output: >
+    A structured list of top-performing keywords and short usage tips 
+    for each, plus any notable search metrics.
+  agent: seo_keyword_finder
+
+create_outline:
+  title: "Create a Comprehensive Blog Outline"
+  description: >
+    Based on the collected keywords, craft a 
+    structured outline. Ensure logical flow, keyword placement in 
+    headings, and short summaries of each section or subsection.
+  expected_output: >
+    A clear outline with main headings, subheadings, and bullet points 
+    indicating which keywords will appear in each section.
+  agent: outline_creator
+
+draft_content:
+  title: "Draft the Blog Content"
+  description: >
+    Write a complete first draft of the blog post following ALL the outlined sections. 
+    Maintain a {tone} tone and incorporate relevant keywords naturally, including: 
+    {keywords}. Ensure the content falls within 1,500-2,500 words. 
+    Provide concrete examples, data, or anecdotal evidence for each subtopic.
+  expected_output: >
+    A thorough, cohesive blog post draft (1,500-2,500 words) in {tone} tone, 
+    covering all outlined points with proper keyword integration.
+  agent: content_writer
+
+optimize_seo:
+  title: "SEO & Readability Optimization"
+  description: >
+    Review the blog post draft. Ensure the {tone} tone is maintained while
+    improving keyword usage (including: {keywords}), heading structure, 
+    and readability. Preserve or expand content length.
+  expected_output: >
+    An optimized blog post retaining {tone} tone and original length 
+    (1,500-2,500 words) with improved SEO elements.
+  agent: seo_checker
+
+link_strategy:
+  title: "Propose External Links"
+  description: >
+    Identify reputable external sources. Add external links that align with SEO best practices, 
+    increase credibility, and guide readers to useful resources. 
+    Make only incremental edits to improve keyword usage, heading structure, 
+    and readability, while preserving or expanding the current content 
+    length. Do NOT overly summarize or remove critical sections.
+    The current date is {current_date}.
+  expected_output: >
+    An updated blog post text, retaining its original length 
+    (1,500–2,500 words) with additional external sources added 
+    for better clarity or SEO.
+  agent: link_strategist
+
+format_markdown:
+  title: "Convert to Markdown"
+  description: >
+    Format the final, edited post into Markdown. Use headings, lists, 
+    emphasis, and other Markdown elements where appropriate. 
+    Do not include triple backticks.
+  expected_output: >
+    A fully formatted .md file that is publication-ready.
+  agent: markdown_formatter
