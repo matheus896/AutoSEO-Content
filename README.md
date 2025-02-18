@@ -66,8 +66,7 @@ seo-blog-factory/
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/seo-blog-factory.git
-cd seo-blog-factory
+git clone https://github.com/matheus896/AutoSEO-Content.git
 ```
 
 2. Configure o ambiente virtual:
